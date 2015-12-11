@@ -11,6 +11,7 @@ class Instructor::LessonsController < ApplicationController
 		
 	end
 
+	#POST /instructor/sections/:section_id/lessons
 	def create
 		# @section = Section.find(params[:section_id])
 		# if current_section.course.user != current_user
@@ -35,6 +36,6 @@ class Instructor::LessonsController < ApplicationController
 	end
 
 	def lesson_params
-		params.require(:lesson).permit(:title, :subtitle)
+		params.require(:lesson).permit(:title, :subtitle, :video)
 	end
 end

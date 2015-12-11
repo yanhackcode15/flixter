@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'carrierwave-aws'
+gem 'mini_magick', '~> 4.3.1'
+# gem "fog", "~> 1.3.1"
+gem 'figaro'
+gem 'carrierwave'
 gem 'simple_form'
 gem 'devise', '>= 3.2.4'
 gem 'bootstrap-sass', '~> 3.3.5'
