@@ -1,4 +1,6 @@
 class Course < ActiveRecord::Base
+  mount_uploader :image, ImageUploader
+
 	belongs_to :user
 	has_many :sections
   has_many :enrollments 
@@ -14,5 +16,12 @@ class Course < ActiveRecord::Base
 
   # end
 
-  mount_uploader :image, ImageUploader
+
+  def free?
+    cost.zero?
+  end
+
+  def premium?
+    ! free?
+  end
 end

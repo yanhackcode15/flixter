@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
   	# enrolled_courses = enrollments.collect do |enrollment|
     #   enrollment.course
     # end 
+
+   # the code block above is the same as the code block below
    #  enrollments.each do |enrollment|
    #    enrolled_courses<<enrollment.course
    #  end 
